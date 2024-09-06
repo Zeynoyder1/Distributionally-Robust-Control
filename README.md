@@ -38,7 +38,7 @@ The system studied in this project models the longitudinal flight control of a *
 4. **Evaluation**:
 We evaluate the system performance through state trajectories, control inputs, and cost metrics across various disturbance types, including normally distributed, triangular, and structured disturbances.
 
-<img src="results.jpg" alt="System Diagram" width="600"/>
+<img src="results.jpg" alt="System Diagram" width="700"/>
 
 ## Conclusion
 - Without controllers: The system shows significant overshoot, oscillation, and slow stabilization.
