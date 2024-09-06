@@ -24,21 +24,21 @@ The system studied in this project models the longitudinal flight control of a *
    - We model the LDS using a set of state-space equations:
    ```math
    x(t+1) = A x(t) + B u(t) + D w(t)
-   y(t) = C x(t)
-   Where A, B, C, and D are system matrices, x(t) is the state, u(t) is the control input, and w(t) is the disturbance input.
+   y(t) = C x(t)  
+- Where A, B, C, and D are system matrices, x(t) is the state, u(t) is the control input, and w(t) is the disturbance input.
 
 2. **Controllers**:
-  - **Stochastic Control: Designed to handle random disturbances, minimizing the expected cost.
-  - **Robust Control: Focused on minimizing the worst-case cost, providing guaranteed performance even under adversarial disturbances.
+  - Stochastic Control: Designed to handle random disturbances, minimizing the expected cost.
+  - Robust Control: Focused on minimizing the worst-case cost, providing guaranteed performance even under adversarial disturbances.
 
 3. **Simulations**:
-  - **Multiple disturbance scenarios are simulated to compare the performance of stochastic and robust controllers.
-  - **The Linear Quadratic Regulator (LQR) approach is used to design the controllers.
+  - Multiple disturbance scenarios are simulated to compare the performance of stochastic and robust controllers.
+  - The Linear Quadratic Regulator (LQR) approach is used to design the controllers.
 
 4. **Evaluation**:
 We evaluate the system performance through state trajectories, control inputs, and cost metrics across various disturbance types, including normally distributed, triangular, and structured disturbances.
 
 ## Results
-- **Without controllers: The system shows significant overshoot, oscillation, and slow stabilization.
-- **Stochastic control: Quickly stabilizes the system with minimal overshoot and is more efficient in terms of cost across random disturbances.
-- **Robust control: Provides stronger stability guarantees in the presence of adversarial disturbances but may incur slightly higher costs than stochastic control.
+- Without controllers: The system shows significant overshoot, oscillation, and slow stabilization.
+- Stochastic control: Quickly stabilizes the system with minimal overshoot and is more efficient in terms of cost across random disturbances.
+- Robust control: Provides stronger stability guarantees in the presence of adversarial disturbances but may incur slightly higher costs than stochastic control.
