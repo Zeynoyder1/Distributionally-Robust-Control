@@ -38,6 +38,8 @@ The system studied in this project models the longitudinal flight control of a *
 4. **Evaluation**:
 We evaluate the system performance through state trajectories, control inputs, and cost metrics across various disturbance types, including normally distributed, triangular, and structured disturbances.
 
+![Results](results.png)
+
 ## Results
 - Without controllers: The system shows significant overshoot, oscillation, and slow stabilization.
 - Stochastic control: Quickly stabilizes the system with minimal overshoot and is more efficient in terms of cost across random disturbances.
